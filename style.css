@@ -1,0 +1,328 @@
+header{
+    background-color: rgb(0, 174, 255);
+    color: black;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        
+        text-align: center; /* Alinha os itens à direita */
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center; /* Garante que os itens individuais fiquem alinhados à direita */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Garante que o botão hambúrguer fique no canto direito */
+    }
+}
+
+/* Estilos globais e básicos */
+
+
+img {
+border-radius: 10px;
+}
+
+
+html {
+overflow-x: hidden;
+}
+
+header{
+    position:sticky; 
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+max-width: 1024px;
+width: 100%;
+margin: 0 auto;
+}
+
+
+
+#carousel-img{
+border-radius: 0px;
+}
+
+
+
+
+.container-flex {
+display: flex;
+}
+
+#sobre-a-loja{
+margin-top: 16px;
+padding: 16px;
+justify-content: space-between;
+display: flex;
+flex: wrap;
+flex-direction: column;
+}
+
+#sobre-a-loja h2 {
+padding: 2px;
+border-bottom: 2px solid #192a56;
+}
+
+
+#texto-sobre{
+padding: 16px;
+justify-content: space-between;
+display: flex;
+flex: wrap;
+}
+
+#sobre-a-loja img {
+max-width: 400px;
+margin-right: 24px;
+}
+
+section {
+padding: 48px 0;
+}
+
+section h2 {
+margin-bottom: 16px;
+}
+
+.lista-tenis {
+flex-wrap: wrap;
+}
+
+.lista-tenis li {
+list-style: none;
+max-width: 30%;
+margin-bottom: 24px;
+}
+
+.lista-tenis img {
+max-width: 100%;
+}
+
+.lista-tenis li h3 {
+margin: 16px 0;
+}
+
+
+
+.price {
+margin: 16px 0;
+display: block;
+}
+
+footer{
+background-color: #00a2ff;
+padding-top: 20px ;
+color:#fff;
+}
+
+footer .container-flex {
+display: flex;
+justify-content: space-between;  /* Alinha os elementos nas extremidades */
+align-items: center;  /* Alinha os itens verticalmente ao centro */
+}
+
+footer li {
+list-style: none;
+display: inline;
+margin-left: 16px;
+}
+
+footer li img {
+height: 30px;
+}
+
+.shoe-product {
+padding: 16px;
+}
+
+.lista-tenis {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+gap: 16px;
+margin-right: 0px;
+padding-right: 0px;
+}
+
+.lista-tenis li {
+list-style: none;
+min-width: 280px;
+margin-left: -30px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+
+html, body {
+overflow-x: hidden;
+}
+
+
+
+
+.container {
+padding: 0 16px;
+}
+
+.container-flex{
+margin-top: 0px;
+padding: 8px;
+display: flex;
+flex: wrap;
+align-items: center;
+flex-direction: column;
+}
+
+header > .container-flex{
+flex-direction: row;
+}
+
+#texto-sobre{
+padding: 800px;
+}
+
+
+#sobre-a-loja img {
+max-height: fit-content;
+max-width: 100%; 
+margin-bottom: 16px;
+}
+
+#sobre-a-loja .texto-sobre {
+max-width: 100%;
+font-size: 12px;
+}
+
+/* Layout de lista de tênis (2 itens por linha) */
+.lista-tenis {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap: 16px;
+}
+
+.lista-tenis li {
+max-width: 100%;
+text-align: center;
+margin-left: 0px;
+}
+
+.lista-tenis img {
+max-width: 80%;
+margin-bottom: 8px;
+}
+
+/* Ajuste no botão de produtos */
+.lista-tenis li button {
+width: 100%;
+}
+
+/* Ajustes nos títulos e preços */
+section h2 {
+font-size: 20px;
+margin-bottom: 8px;
+}
+
+.price {
+font-size: 14px;
+}
+
+.footer img{
+flex-direction: row;
+display: inline-block;
+align-items: center;
+justify-content: center;
+}
+
+footer .container-flex {
+display: flex;
+justify-content: center;  /* Alinha os elementos nas extremidades */
+align-items: center;  /* Alinha os itens verticalmente ao centro */
+}
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+html, body {
+overflow-x: hidden;
+}
+
+header > .container-flex{
+flex-direction: row;
+}
+
+.container {
+padding: 0 16px;
+}
+
+.container-flex{
+margin-top: 0px;
+padding: 8px;
+display: flex;
+flex: wrap;
+align-items: center;
+flex-direction: column;
+}
+
+#texto-sobre{
+padding: 800px;
+}
+
+
+#sobre-a-loja img {
+max-height: fit-content;
+max-width: 80%; 
+margin-bottom: 16px;
+}
+
+#sobre-a-loja .texto-sobre {
+max-width: 100%;
+font-size: 18px;
+}
+
+
+.lista-tenis {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr); 
+gap: 16px;
+margin-right: 0px;
+padding-right: 0px;
+}
+
+.lista-tenis li {
+list-style: none;
+min-width: 280px;
+margin-left: 45px;
+}
+
+.container-flex > footer {
+flex: wrap;
+display: flex;
+justify-content: center;  /* Alinha os elementos nas extremidades */
+align-items: center;  /* Alinha os itens verticalmente ao centro */
+}
+
+}
+
+@media screen and (min-width: 1024px){
+footer .container-flex {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+footer ul {
+margin-left: auto;  /* Move a lista de ícones para a direita */
+}
+}
+

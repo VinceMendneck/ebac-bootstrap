@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Exercicio bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+            <h1>Ebac Shoes</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre-a-loja">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usados">Usados</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img id="carousel-img" class="w-100 img-fluid" src="./images/slide1.jpg"/>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img id="carousel-img" class="w-100 img-fluid" src="./images/slide2.jpg"/>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img id="carousel-img" class="w-100 img-fluid" src="./images/slide3.jpeg"/>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+            </div>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="header">
+        <section class="active" id="sobre-a-loja">
+            <div class="container">
+            <div class="container-flex">
+                <img src="./images/loja.jpg" alt="Imagem da loja EBAC Shoes">
+                <div class="texto-sobre">
+                    <h2>
+                        Sobre a Loja
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestiae nesciunt, animi minus reiciendis temporibus et officia vel, impedit voluptates illo veniam quisquam unde mollitia. Laudantium delectus doloribus doloremque placeat.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga reiciendis voluptatum repudiandae officiis corporis obcaecati accusantium, fugit reprehenderit enim sunt sit itaque dolore doloremque id laborum earum deserunt ipsam a.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="container" id="produtos">
+                <h2>Produtos</h2>
+                <div>
+                <ul class="container-flex lista-tenis">
+                    <li class="shoe-product">
+                        <img src="./images/tenis2.jpg" alt="tenis jordan ebac g7">
+                        <h3>Jordan EBAC G7</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magni voluptatum! Nulla
+                        </p>
+                        <div class="price">
+                        <strong>R$ 50.000</strong>
+                        </div>
+                        <button class="btn btn-primary" type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li class="shoe-product">
+                        <img src="./images/tenis3.jpg" alt="tenis jordan ebac fling">
+                        <h3>Jordan EBAC Fling</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magni voluptatum! Nulla
+                        </p>
+                        <div class="price">
+                        <strong>R$ 60.000</strong>
+                        </div>
+                        <button class="btn btn-primary" type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li class="shoe-product">
+                        <img src="./images/tenis4.jpg" alt="tenis jordan ebac fidget">
+                        <h3>Jordan EBAC Dark</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magni voluptatum! Nulla
+                        </p>
+                        <div class="price">
+                        <strong>R$ 70.000</strong>
+                        </div>
+                        <button class="btn btn-primary" type="button">Adicionar ao carrinho</button>
+                    </li>
+                    <li class="shoe-product">
+                        <img src="./images/tenis1.jpg" alt="tenis jordan ebac retro">
+                        <h3>Jordan EBAC Retro</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, magni voluptatum! Nulla
+                        </p>
+                        <div class="price">
+                        <strong>R$ 80.000</strong>
+                        </div>
+                        <button class="btn btn-primary" type="button">Adicionar ao carrinho</button>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container" id="usados">
+                <h2>Tênis Usados</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Jordan Ebac Retro
+                                </div>
+                                <img src="images/tenis1.jpg"/>
+                                <div class="card-body">
+                                    <h4 class="card-title">R$ 850,00</h4>
+                                    <h5 class="card-subtitle">Conservação: Excelente</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt. Pariatur repudiandae iste numquam mollitia </p>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Jordan EBAC G7
+                                </div>
+                                <img src="images/tenis2.jpg"/>
+                                <div class="card-body">
+                                    <h4 class="card-title">R$ 730,00</h4>
+                                    <h5 class="card-subtitle">Conservação: Razoável</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt. Pariatur repudiandae iste numquam mollitia </p>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Jordan EBAC Fling
+                                </div>
+                                <img src="images/tenis3.jpg"/>
+                                <div class="card-body">
+                                    <h4 class="card-title">R$ 800,00</h4>
+                                    <h5 class="card-subtitle">Conservação: Ótimo</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt. Pariatur repudiandae iste numquam mollitia </p>
+                                    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <div class="container container-flex">
+                <p>2025 &copy; EBAC Shoes - Todos os direitos reservados</p>
+                <ul class="footer">
+                    <li>
+                        <a href="#">
+                            <img src="./icones/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icones/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icones/youtube.png" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./lib/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/messages_pt_BR.min.js"></script>
+        <script src="./js/main.js"></script>
+        
+</body>
+</html>
